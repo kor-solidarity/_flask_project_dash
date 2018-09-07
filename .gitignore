@@ -1,0 +1,9 @@
+# 깃에 올릴필요 없는것들 다 여기로.
+.Python
+__pycache__/
+env/
+.idea/
+.git/
+
+# 보안자료들...
+app/settings.py
