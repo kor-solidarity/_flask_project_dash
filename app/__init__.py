@@ -6,4 +6,6 @@ app = Flask(__name__)
 app.config.from_object('app.settings')
 db = SQLAlchemy(app)
 
-migrate =
+# migrate =
+
+from article import views

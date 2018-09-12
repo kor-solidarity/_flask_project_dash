@@ -15,7 +15,7 @@ class Aaa(db.Model):
 
 @app.route('/thread/<int:page_num>')
 def thread(page_num):
-    threads = Aaa.query.paginate(per_page=20, page=page_num, error_out=True)
+    threads = Aaa.query.paginate(per_page=5, page=page_num, error_out=False)
 
     return render_template('thr.html', threads=threads)
 
